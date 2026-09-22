@@ -1,5 +1,9 @@
 # 🎓 Student Academic Performance Prediction & Management System
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Project-success?style=for-the-badge)](https://student-performance-prediction-mana.vercel.app/)
+
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Source%20Code-black?style=for-the-badge&logo=github)](https://github.com/Sivaranjani170305/student-performance-prediction-management-system)
+
 A full-stack machine learning application designed to analyze, evaluate, and predict student academic performance using multiple Machine Learning models.
 
 The system provides an interactive dashboard for exploring student data, comparing ML model performance, analyzing important academic factors, and generating predictions through a user-friendly interface.
