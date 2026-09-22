@@ -1,0 +1,37 @@
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.05) 0%, transparent 40%),
+              radial-gradient(circle at bottom left, rgba(139, 92, 246, 0.05) 0%, transparent 40%);
+}
+
+.content-area {
+  flex: 1;
+  max-width: calc(100vw - 300px);
+  overflow-y: auto;
+}
+
+.grad-bg {
+  background: var(--grad-primary);
+}
+
+.info-page {
+  padding: 80px;
+  max-width: 800px;
+}
+
+.info-page h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+  .app-layout {
+    flex-direction: column;
+  }
+  
+  .content-area {
+    max-width: 100vw;
+  }
+}
