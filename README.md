@@ -1,78 +1,365 @@
-# 🎓 Student Academic Performance Prediction Evaluation
+# 🎓 Student Academic Performance Prediction & Management System
 
-A sophisticated analytics dashboard designed to evaluate, compare, and visualize the performance of various Machine Learning models in predicting student academic outcomes. This application provides insights into model accuracy, precision, recall, and feature importance to help educators identify at-risk students.
+A full-stack machine learning application designed to analyze, evaluate, and predict student academic performance using multiple Machine Learning models.
 
-## 🚀 Overview
+The system provides an interactive dashboard for exploring student data, comparing ML model performance, analyzing important academic factors, and generating predictions through a user-friendly interface.
 
-The **EDU Predictor** platform analyzes student behavioral data and historical grades to provide a data-driven approach to educational support. By comparing multiple algorithms, the tool helps in selecting the most reliable model for performance forecasting.
+---
+
+## 📌 Project Overview
+
+**Student Academic Performance Prediction & Management System** is developed to support data-driven analysis of student academic outcomes.
+
+The system combines a modern React-based frontend with a backend prediction service to:
+
+* Analyze student academic and behavioral data
+* Evaluate multiple Machine Learning algorithms
+* Compare model performance using evaluation metrics
+* Identify important factors affecting student performance
+* Predict student academic outcomes based on input data
+* Present analytical results through interactive dashboards
+
+---
 
 ## ✨ Key Features
 
-- **📊 Comprehensive Dashboard**: At-a-glance view of model performance metrics and data distribution.
-- **⚖️ Model Comparison**: Side-by-side evaluation of Logistic Regression, Random Forest, SVM, and KNN.
-- **📈 Advanced Visualizations**:
-  - Model Performance Radar Charts
-  - Accuracy & F1-Score Comparisons
-  - Feature Importance Rankings (Absences, Failures, Study Time, etc.)
-  - Grade Distribution Analysis
-- **⚡ Real-time Predictor**: Interactive interface to test model predictions with custom inputs.
-- **🎨 Premium UI/UX**: Modern dark-themed design with smooth glassmorphism effects and Framer Motion animations.
+### 📊 Analytics Dashboard
+
+* Model performance overview
+* Accuracy and F1-score analysis
+* Student performance distribution
+* Dataset statistics
+* Interactive data visualizations
+
+### 🤖 Machine Learning Model Evaluation
+
+The system evaluates and compares:
+
+* Logistic Regression
+* Random Forest
+* Support Vector Machine (SVM)
+* K-Nearest Neighbors (KNN)
+
+### 🔍 Model Comparison
+
+Provides a comparative view of different ML models using metrics such as:
+
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+
+### 📈 Data Visualization
+
+The dashboard includes visual analysis for:
+
+* Model performance
+* Grade distribution
+* Feature importance
+* Student academic trends
+* Prediction results
+
+### ⚡ Student Performance Predictor
+
+Users can enter student-related academic and behavioral information and generate a performance prediction through the prediction system.
+
+### 🎨 Modern User Interface
+
+* Responsive React interface
+* Dark-themed dashboard
+* Glassmorphism-inspired UI
+* Interactive components
+* Smooth animations
+* Clean navigation
+
+---
+
+## 🧠 Machine Learning
+
+The project evaluates different classification algorithms to determine how effectively student academic performance can be predicted.
+
+### Models
+
+| Model               | Description                                                              |
+| ------------------- | ------------------------------------------------------------------------ |
+| Logistic Regression | Linear classification algorithm suitable for binary classification       |
+| Random Forest       | Ensemble learning algorithm based on multiple decision trees             |
+| SVM                 | Classification algorithm that finds an optimal decision boundary         |
+| KNN                 | Instance-based algorithm that predicts based on neighboring observations |
+
+### Evaluation Metrics
+
+The models are evaluated using:
+
+* **Accuracy** – Overall proportion of correct predictions
+* **Precision** – Proportion of predicted positive cases that are actually positive
+* **Recall** – Proportion of actual positive cases correctly identified
+* **F1-Score** – Harmonic mean of precision and recall
+
+---
 
 ## 🛠️ Technology Stack
 
-- **Framework**: [React 19](https://react.dev/)
-- **Build Tool**: [Vite](https://vitejs.dev/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Data Visualization**: [Recharts](https://recharts.org/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Styling**: Vanilla CSS3 (Custom Design System)
+### Frontend
 
-## 📦 Installation
+* React 19
+* Vite
+* JavaScript
+* HTML5
+* CSS3
+* Recharts
+* Framer Motion
+* Lucide React
 
-Follow these steps to set up the project locally:
+### Backend / ML
 
-1. **Clone the repository** (if applicable) or navigate to the project directory.
-2. **Ensure you have Node.js installed** (Version 18 or higher recommended).
-3. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+* Node.js
+* Python
+* Machine Learning
+* Scikit-learn
+* Pandas
+* NumPy
 
-## 🏃 如何运行 (How to Run)
+### Data & Model
 
-### Development Mode
-To start the development server with Hot Module Replacement (HMR):
-```bash
-npm run dev
-```
-After running this command, open [http://localhost:5173](http://localhost:5173) in your browser.
+* CSV Dataset
+* Jupyter Notebook
+* Trained Machine Learning Models
+* JSON-based evaluation metrics
 
-### Production Build
-To create a production-ready bundle in the `dist` folder:
-```bash
-npm run build
-```
-
-### Preview Production
-To preview the production build locally:
-```bash
-npm run preview
-```
+---
 
 ## 📂 Project Structure
 
-- `src/components`: Reusable UI components (Sidebar, Cards, etc.)
-- `src/pages`: Main application views (Dashboard, Comparison, Predictor)
-- `src/data`: Mock data and model performance metrics
-- `src/assets`: Static assets and images
-
-## 🤖 Models Evaluated
-
-The application compares the following algorithms:
-- **Logistic Regression**: Linear model for binary classification.
-- **Random Forest**: Ensemble learning method for high-accuracy classification.
-- **SVM (Support Vector Machine)**: Effective for high-dimensional spaces.
-- **KNN (K-Nearest Neighbors)**: Simple, instance-based learning algorithm.
+```text
+student-performance-prediction-management-system/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── MetricCard.jsx
+│   │   └── Sidebar.jsx
+│   │
+│   ├── pages/
+│   │   ├── Auth.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── Comparison.jsx
+│   │   └── Predictor.jsx
+│   │
+│   ├── data/
+│   │   └── modelsData.js
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   └── index.css
+│
+├── server/
+│   ├── data/
+│   │   └── raw/
+│   │
+│   ├── metrics/
+│   │   └── latest_evaluation.json
+│   │
+│   ├── models/
+│   │   └── random_forest_v1.2.pkl
+│   │
+│   ├── notebooks/
+│   │   └── eda_student_performance.ipynb
+│   │
+│   ├── scripts/
+│   │   └── data_cleaning.py
+│   │
+│   ├── index.js
+│   ├── predictor.js
+│   ├── model_trainer.py
+│   ├── requirements.txt
+│   └── Dockerfile
+│
+├── sample_students.csv
+├── package.json
+├── vite.config.js
+├── README.md
+└── RUNNING_GUIDE.md
+```
 
 ---
-Developed for evaluating student academic performance prediction models.
+
+## 📦 Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Sivaranjani170305/student-performance-prediction-management-system.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd student-performance-prediction-management-system
+```
+
+### 3. Install Frontend Dependencies
+
+```bash
+npm install
+```
+
+### 4. Install Backend / ML Dependencies
+
+Navigate to the server directory:
+
+```bash
+cd server
+```
+
+Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ How to Run
+
+### Start the Frontend
+
+From the project root:
+
+```bash
+npm run dev
+```
+
+Then open:
+
+```text
+http://localhost:5173
+```
+
+### Start the Backend
+
+Open another terminal and navigate to:
+
+```bash
+cd server
+```
+
+Then start the backend service according to the configuration provided in `RUNNING_GUIDE.md`.
+
+---
+
+## 📊 Dataset
+
+The project uses student academic and behavioral data for performance analysis and prediction.
+
+Example factors include:
+
+* Study Time
+* Absences
+* Previous Failures
+* Academic Grades
+* Student-related behavioral attributes
+
+The dataset is processed before being used for Machine Learning model training and evaluation.
+
+---
+
+## 🔬 Model Evaluation Workflow
+
+```text
+Student Dataset
+       ↓
+Data Cleaning & Preprocessing
+       ↓
+Feature Preparation
+       ↓
+Model Training
+       ↓
+Model Evaluation
+       ↓
+Accuracy / Precision / Recall / F1-Score
+       ↓
+Model Comparison
+       ↓
+Student Performance Prediction
+       ↓
+Dashboard Visualization
+```
+
+---
+
+## 📈 Application Modules
+
+### 🔐 Authentication
+
+Provides a dedicated authentication interface for accessing the application.
+
+### 📊 Dashboard
+
+Displays important analytical information and model performance metrics.
+
+### ⚖️ Model Comparison
+
+Allows users to compare the performance of different Machine Learning algorithms.
+
+### 🔮 Predictor
+
+Provides an interactive interface for generating student performance predictions.
+
+---
+
+## 🎯 Project Objectives
+
+* To analyze student academic performance using historical data
+* To evaluate multiple Machine Learning algorithms
+* To compare model performance using standard evaluation metrics
+* To identify important factors associated with student outcomes
+* To provide an interactive prediction system
+* To present Machine Learning results through an accessible dashboard
+
+---
+
+## 🔮 Future Enhancements
+
+* Student management module
+* Advanced student performance reports
+* Early identification of students requiring academic support
+* Additional Machine Learning algorithms
+* Automated model retraining
+* Cloud deployment
+* Database integration
+* Role-based access control
+* Advanced analytics and reporting
+
+---
+
+## 📸 Screenshots
+
+Screenshots of the application can be added here to showcase:
+
+* Login page
+* Dashboard
+* Model comparison
+* Prediction page
+* Analytics and visualizations
+
+---
+
+## 👩‍💻 Author
+
+**Sivaranjani S**
+
+Computer Science Engineering
+
+GitHub: [Sivaranjani170305](https://github.com/Sivaranjani170305)
+
+---
+
+## 📄 License
+
+This project is developed for academic and educational purposes.
+
+---
+
+⭐ If you find this project useful, consider giving the repository a star.
